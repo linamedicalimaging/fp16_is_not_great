@@ -1,0 +1,26 @@
+Hi Tasin,
+
+I'm working with a model called RadFM and I’ve encountered two problems that I’d like your help with:
+
+The checkpoint provided by the author (pytorch_model.bin) is very large (around 50GB). When I try to run it on the school server, it results in an out-of-memory (OOM) error. So I tried to compress the model to FP16 precision, which reduced the size to about 26GB. I saved it as ./Quick_demo/pytorch_model_fp16_github.bin. I wrote a script called test_modified.py (based on the original test.py provided by the author), which loads and runs this FP16 model for testing. I marked all the modifications I made in the script using comments (though I’m not sure whether my commenting style follows standard programming conventions).
+However, the problem is that the output is completely wrong and clearly doesn’t match the image content. For example:
+Output: birads negative, breast extremely density, No Finding
+I suspect that there may be something wrong with how I compressed the model — maybe it's not actually FP16, but something like fp8 or fp4 (although I’m not even sure if fp8 or fp4 are real terms). So I’d really appreciate it if you could take a look at test_modified.py (./Quick_demo/test_modified.py) and help me check whether my compression code is correct — in other words, is the model I got (pytorch_model_fp16_github.bin) really in FP16, or somehow corrupted?
+
+Two of my supervisors asked me to directly test the results using the original pytorch_model.bin, to evaluate whether the RadFM model actually works well. But the file is too large, and I don’t know how to upload it. They said I could “use two GPUs to upload it,” but I’m not sure how that works. I tried it before, about half a year ago, but never succeeded. So I’d like to ask if you could help me upload the original pytorch_model.bin.
+
+The two images I used for testing are located at:
+
+./Quick_demo/20587054_b6a4f750c6df4f90_MG_R_CC_ANON.jpg
+./Quick_demo/20587080_b6a4f750c6df4f90_MG_R_ML_ANON.jpg
+
+Could you help me with:
+
+1. Checking whether my model compression method is correct
+
+2. Figuring out how to upload the original 50GB model to the server and run it
+
+Thanks so much!!
+
+Best regards,
+Lina
