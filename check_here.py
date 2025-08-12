@@ -1,26 +1,15 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 from Model.RadFM.multimodality_model import MultiLLaMAForCausalLM
 from accelerate import init_empty_weights, load_checkpoint_and_dispatch
 import torch
 from transformers import LlamaTokenizer
 from torchvision import transforms
 from PIL import Image   
-import os
-os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2"
-
-
-# In[2]:
-
+GPU_ID = [0,1,2]
 
 def get_tokenizer(max_img_size=100, image_num=32):
     image_padding_tokens = []
     # Load the base tokenizer from the provided path
-    text_tokenizer = LlamaTokenizer.from_pretrained("/home/lina/GitHub/Llama-2-13b-hf", local_files_only=True)
+    text_tokenizer = LlamaTokenizer.from_pretrained("Llama-2-13b-hf", local_files_only=True)
     special_token = {"additional_special_tokens": ["<image>", "</image>"]}
 
     # Generate unique tokens for each image position and patch
@@ -46,10 +35,6 @@ def get_tokenizer(max_img_size=100, image_num=32):
         text_tokenizer.eos_token_id = 2
 
     return text_tokenizer, image_padding_tokens
-
-
-# In[3]:
-
 
 def combine_and_preprocess(question, image_list, image_padding_tokens):
     # Define image transformation pipeline
@@ -122,108 +107,76 @@ print("Setup Model")
 with init_empty_weights():
     model = MultiLLaMAForCausalLM()
 device_map = {
- 'lang_model.model.embed_tokens': 0,
- 'lang_model.model.layers.0': 0,
- 'lang_model.model.layers.1': 0,
- 'lang_model.model.layers.2': 0,
- 'lang_model.model.layers.3': 0,
- 'lang_model.model.layers.4': 0,
- 'lang_model.model.layers.5': 0,
- 'lang_model.model.layers.6': 0,
- 'lang_model.model.layers.7': 0,
- 'lang_model.model.layers.8': 0,
- 'lang_model.model.layers.9': 0,
- 'lang_model.model.layers.10': 0,
- 'lang_model.model.layers.11': 0,
- 'lang_model.model.layers.12': 0,   
- 'lang_model.model.layers.13.self_attn.q_proj': 0,
- 'lang_model.model.layers.13.self_attn.k_proj': 0,
- 'lang_model.model.layers.13.self_attn.v_proj': 0,
- 'lang_model.model.layers.13.self_attn.o_proj': 0,
- 'lang_model.model.layers.13.mlp': 0,
- 'lang_model.model.layers.13.input_layernorm': 0,
- 'lang_model.model.layers.13.post_attention_layernorm': 0,
- 'lang_model.model.layers.14': 1,
- 'lang_model.model.layers.15': 1,
- 'lang_model.model.layers.16': 1,
- 'lang_model.model.layers.17': 1,
- 'lang_model.model.layers.18': 1,
- 'lang_model.model.layers.19': 1,
- 'lang_model.model.layers.20': 1,
- 'lang_model.model.layers.21': 1,
- 'lang_model.model.layers.22': 1,
- 'lang_model.model.layers.23': 1,
- 'lang_model.model.layers.24': 1,
- 'lang_model.model.layers.25': 1,
- 'lang_model.model.layers.26': 1,  
- 'lang_model.model.layers.27.self_attn.q_proj': 0,
- 'lang_model.model.layers.27.self_attn.k_proj': 0,
- 'lang_model.model.layers.27.self_attn.v_proj': 0,
- 'lang_model.model.layers.27.self_attn.o_proj': 0,
- 'lang_model.model.layers.27.mlp': 0,
- 'lang_model.model.layers.27.input_layernorm': 0,
- 'lang_model.model.layers.27.post_attention_layernorm': 0,
- 'lang_model.model.layers.28': 2,
- 'lang_model.model.layers.29': 2,
- 'lang_model.model.layers.30': 2,
- 'lang_model.model.layers.31': 2,
- 'lang_model.model.layers.32': 2,
- 'lang_model.model.layers.33': 2,
- 'lang_model.model.layers.34': 2,
- 'lang_model.model.layers.35': 2,
- 'lang_model.model.layers.36': 2,
- 'lang_model.model.layers.37': 2,
- 'lang_model.model.layers.38': 2,
- 'lang_model.model.layers.39': 2,
- 'lang_model.model.norm': 0,
- 'lang_model.model.rotary_emb': 0,
- 'lang_model.lm_head': 0,
- 'embedding_layer': 0}
+ 'lang_model.model.embed_tokens': GPU_ID[0],
+ 'lang_model.model.layers.0': GPU_ID[0],
+ 'lang_model.model.layers.1': GPU_ID[0],
+ 'lang_model.model.layers.2': GPU_ID[0],
+ 'lang_model.model.layers.3': GPU_ID[0],
+ 'lang_model.model.layers.4': GPU_ID[0],
+ 'lang_model.model.layers.5': GPU_ID[0],
+ 'lang_model.model.layers.6': GPU_ID[0],
+ 'lang_model.model.layers.7': GPU_ID[0],
+ 'lang_model.model.layers.8': GPU_ID[0],
+ 'lang_model.model.layers.9': GPU_ID[0],
+ 'lang_model.model.layers.10': GPU_ID[0],
+ 'lang_model.model.layers.11': GPU_ID[0],
+ 'lang_model.model.layers.12': GPU_ID[0],
+ 'lang_model.model.layers.13.self_attn.q_proj': GPU_ID[0],
+ 'lang_model.model.layers.13.self_attn.k_proj': GPU_ID[0],
+ 'lang_model.model.layers.13.self_attn.v_proj': GPU_ID[0],
+ 'lang_model.model.layers.13.self_attn.o_proj': GPU_ID[0],
+ 'lang_model.model.layers.13.mlp': GPU_ID[0],
+ 'lang_model.model.layers.13.input_layernorm': GPU_ID[0],
+ 'lang_model.model.layers.13.post_attention_layernorm': GPU_ID[0],
+ 'lang_model.model.layers.14': GPU_ID[1],
+ 'lang_model.model.layers.15': GPU_ID[1],
+ 'lang_model.model.layers.16': GPU_ID[1],
+ 'lang_model.model.layers.17': GPU_ID[1],
+ 'lang_model.model.layers.18': GPU_ID[1],
+ 'lang_model.model.layers.19': GPU_ID[1],
+ 'lang_model.model.layers.20': GPU_ID[1],
+ 'lang_model.model.layers.21': GPU_ID[1],
+ 'lang_model.model.layers.22': GPU_ID[1],
+ 'lang_model.model.layers.23': GPU_ID[1],
+ 'lang_model.model.layers.24': GPU_ID[1],
+ 'lang_model.model.layers.25': GPU_ID[1],
+ 'lang_model.model.layers.26': GPU_ID[1],
+ 'lang_model.model.layers.27.self_attn.q_proj': GPU_ID[0],
+ 'lang_model.model.layers.27.self_attn.k_proj': GPU_ID[0],
+ 'lang_model.model.layers.27.self_attn.v_proj': GPU_ID[0],
+ 'lang_model.model.layers.27.self_attn.o_proj': GPU_ID[0],
+ 'lang_model.model.layers.27.mlp': GPU_ID[0],
+ 'lang_model.model.layers.27.input_layernorm': GPU_ID[0],
+ 'lang_model.model.layers.27.post_attention_layernorm': GPU_ID[0],
+ 'lang_model.model.layers.28': GPU_ID[2],
+ 'lang_model.model.layers.29': GPU_ID[2],
+ 'lang_model.model.layers.30': GPU_ID[2],
+ 'lang_model.model.layers.31': GPU_ID[2],
+ 'lang_model.model.layers.32': GPU_ID[2],
+ 'lang_model.model.layers.33': GPU_ID[2],
+ 'lang_model.model.layers.34': GPU_ID[2],
+ 'lang_model.model.layers.35': GPU_ID[2],
+ 'lang_model.model.layers.36': GPU_ID[2],
+ 'lang_model.model.layers.37': GPU_ID[2],
+ 'lang_model.model.layers.38': GPU_ID[2],
+ 'lang_model.model.layers.39': GPU_ID[2],
+ 'lang_model.model.norm': GPU_ID[0],
+ 'lang_model.model.rotary_emb': GPU_ID[0],
+ 'lang_model.lm_head': GPU_ID[0],
+ 'embedding_layer': GPU_ID[0]}
 model = load_checkpoint_and_dispatch(
     model, checkpoint='pytorch_model.bin', device_map=device_map
 )
 print("Finish loading model")
 model.eval()
 
-
-# In[7]:
-
-
-model.hf_device_map
-
-
-# In[13]:
-
-
 with torch.no_grad():
     lang_x = text_tokenizer(
             text, max_length=2048, truncation=True, return_tensors="pt"
-    )['input_ids'].to(0)
+    )['input_ids'].to(GPU_ID[0])
 
-    vision_x = vision_x.to(0)
+    vision_x = vision_x.to(GPU_ID[0])
     generation = model.generate(lang_x, vision_x)
 
-
-# In[14]:
-
-
-generation
-
-
-# In[15]:
-
-
-generated_texts = text_tokenizer.batch_decode(generation, skip_special_tokens=True) 
-
-
-# In[16]:
-
-
-generated_texts
-
-
-# In[ ]:
-
-
-
-
+generated_texts = text_tokenizer.batch_decode(generation, skip_special_tokens=True)
+print(generated_texts)

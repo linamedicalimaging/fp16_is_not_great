@@ -4,15 +4,13 @@ from transformers import AutoConfig
 from .my_embedding_layer import MyEmbedding
 from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
 import tqdm.auto as tqdm
-import torch.nn as nn
 import torch
-from torch.utils.checkpoint import checkpoint
-from torch.autograd import Variable
-import numpy as np
+
 class MultiLLaMAForCausalLM(nn.Module):
     def __init__(self):  
         super(MultiLLaMAForCausalLM, self).__init__()  
-        self.lang_model = LlamaForCausalLM.from_pretrained("/home/lina/GitHub/Llama-2-13b-hf", local_files_only=True)
+        config = AutoConfig.from_pretrained('Language_files')
+        self.lang_model = LlamaForCausalLM(config)
         self.lang_model.gradient_checkpointing_enable()
         self.lang_model.enable_input_require_grads()
         # self.lang_model.requires_grad_(False)
@@ -24,10 +22,6 @@ class MultiLLaMAForCausalLM(nn.Module):
     def forward(self,lang_x, vision_x, attention_mask, labels, loss_reweight,key_words_query):
         if labels.shape == lang_x.shape:
             self.embedding_layer.flag = 'Text'
-            # lang_x = lang_x.to(vision_x.dtype)
-            # lang_x = lang_x + torch.zeros(1, dtype=lang_x.dtype, device=lang_x.device, requires_grad=True)
-            # vision_x = vision_x + torch.zeros(1, dtype=vision_x.dtype, device=vision_x.device, requires_grad=True) 
-            # input_embedding = checkpoint(self.embedding_layer, lang_x, vision_x)
             input_embedding,loss_match= self.embedding_layer(lang_x, vision_x,key_words_query)   # ,loss_matching
             output = self.lang_model(inputs_embeds = input_embedding,attention_mask = attention_mask, labels = labels)
             logits = output['logits']
