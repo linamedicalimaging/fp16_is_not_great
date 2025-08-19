@@ -1,0 +1,626 @@
+﻿Question,Ground Truth,Pred,belong_to
+Please provide a complete diagnostic radiology report for the provided mammographic images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2008 02.
+
+Os estudos mamográfico e ecográfico documentam nódulo no QSE da mama direita com 20 mm de diâmetro.
+de achados suspeitos de malignidade.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 5 fragmentos, para estudo anatomopatológico.
+Axila sem adenomegalias patológicas.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","Distortion and mass like thickening of the breast parenchyma, right greater than left.",INbreast_dataset
+Please provide a complete diagnostic radiology report for the provided mammographic images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2009 02.
+
+Estudo mamográfico e ecográfico sem achados de suspeição. Sem formações nodulares sólidas
+ou liquidas suspeitas, nem áreas focais de atenuação do feixe ultrassónico. Observa-se
+opacidade nodular à esquerda, de características, à esquerda, também estudada na ecografia,
+correspondendo a formação cística com cerca de 12mm.
+
+Bi-rads 2",Architectural distortion in the right upper outer breast with associated calcifications,INbreast_dataset
+"Using BI-RADS terminology, describe all detected findings with size (mm), location (clock-face and depth), shape, margin, and density<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+Estudo mamográfico e ecográfico sem achados de suspeição. Sem formações nodulares sólidas
+ou liquidas suspeitas, nem áreas focais de atenuação do feixe ultrassónico. Observa-se
+opacidade nodular à esquerda, de características, à esquerda, também estudada na ecografia,
+correspondendo a formação cística com cerca de 12mm.
+
+Bi-rads 2",All masses > 5mm in size should be described with BI-RADS specific terms.,INbreast_dataset
+Please provide your interpretation of this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01.
+O estudo mamográfico documenta agrupamento de microcalcificações localizado na transição dos
+quadrantes superiores da mama esquerda, suspeitas. CDIS?
+Efectuou-se microbiopsia guiada por estereotaxia, onde foram colhidos 4 fragmentos, para estudo
+anatomo-patológico. Os fragmentos foram radiografados, 3 continham microcalcificações.
+
+Alterações com suspeição de malignidade intermédia - Bi-Rads - 4b.","terolateral periareolar nodule. There is a 1.5-2.0 cm irregular,  lobulated mass with spiculated margins in the upper outer quadrant of the left breast. This mass is not seen on the 2001 screening mammogram, and was likely palpable at the time of the 2002 screening mammogram. There is no axillary adenopathy.",INbreast_dataset
+"Please produce a complete diagnostic report for the provided mammograms. The report must include, in this order: 1) Breast density (ACR a-d) with a brief justification; 2) Key imaging findings organized by side (left/right) and view (CC/MLO), covering mass descriptors (shape, margins, density), microcalcifications, architectural distortion, skin/nipple changes, and axillary lymph nodes; 3) Comparison with prior studies (write 'no prior for comparison' if none are available); 4) A single BI-RADS category (0-6) with rationale; 5) Follow-up recommendations aligned with the category: 0 -> additional imaging (e.g., spot compression/magnification/ultrasound/MRI); 3 -> short-interval follow-up in 6 months; 4/5 -> tissue diagnosis recommended with preferred guidance (e.g., ultrasound-guided or stereotactic); 1/2 -> routine screening interval. If no suspicious abnormality is identified, explicitly state 'Negative examination, BI-RADS 1/2 (choose one)' and provide the routine screening interval. Do not fabricate information. For any item that cannot be determined, write 'unable to assess'. Output as concise bullet points, and express all measurements in millimeters<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","No actual estudo, observamos grande quantidade de parênquima mamário, com padrão heterogeneamente
+denso, particularmente nas regiões retro- aureolares e quadrantes supero-externos.
+Não se individualizam imagens de opacidades que sugiram malignidade, micro-calcificações
+suspeitas ou outras alterações significativas, em qualquer dos lados.
+existem algumas raras microcacificações benignas, nomeadamente á esq.",Avoid using abbreviations.,INbreast_dataset
+"Please produce a complete diagnostic report for the provided mammograms. The report must include, in this order: 1) Breast density (ACR a-d) with a brief justification; 2) Key imaging findings organized by side (left/right) and view (CC/MLO), covering mass descriptors (shape, margins, density), microcalcifications, architectural distortion, skin/nipple changes, and axillary lymph nodes; 3) Comparison with prior studies (write 'no prior for comparison' if none are available); 4) A single BI-RADS category (0-6) with rationale; 5) Follow-up recommendations aligned with the category: 0 -> additional imaging (e.g., spot compression/magnification/ultrasound/MRI); 3 -> short-interval follow-up in 6 months; 4/5 -> tissue diagnosis recommended with preferred guidance (e.g., ultrasound-guided or stereotactic); 1/2 -> routine screening interval. If no suspicious abnormality is identified, explicitly state 'Negative examination, BI-RADS 1/2 (choose one)' and provide the routine screening interval. Do not fabricate information. For any item that cannot be determined, write 'unable to assess'. Output as concise bullet points, and express all measurements in millimeters<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01.
+
+No actual estudo, observamos grande quantidade de parênquima mamário, com padrão heterogeneamente denso, particularmente nas regiões retro-aureolares e quadrantes supero-externos.
+Estes aspectos podem diminuir a sensibilidade mamográfica e ocultar pequenos nódulos. A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam imagens de opacidades que sugiram malignidade, micro-calcificações suspeitas ou outras alterações significativas, em qualquer dos lados.
+Observam-se escassas microcalcificações benignas dispersas bilateralmente.
+existem gânglios axilares sem características patológicas bilateralmente.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",,INbreast_dataset
+"Please produce a complete diagnostic report for the provided mammograms. The report must include, in this order: 1) Breast density (ACR a-d) with a brief justification; 2) Key imaging findings organized by side (left/right) and view (CC/MLO), covering mass descriptors (shape, margins, density), microcalcifications, architectural distortion, skin/nipple changes, and axillary lymph nodes; 3) Comparison with prior studies (write 'no prior for comparison' if none are available); 4) A single BI-RADS category (0-6) with rationale; 5) Follow-up recommendations aligned with the category: 0 -> additional imaging (e.g., spot compression/magnification/ultrasound/MRI); 3 -> short-interval follow-up in 6 months; 4/5 -> tissue diagnosis recommended with preferred guidance (e.g., ultrasound-guided or stereotactic); 1/2 -> routine screening interval. If no suspicious abnormality is identified, explicitly state 'Negative examination, BI-RADS 1/2 (choose one)' and provide the routine screening interval. Do not fabricate information. For any item that cannot be determined, write 'unable to assess'. Output as concise bullet points, and express all measurements in millimeters<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+O estudo imagiológico documenta nódulo localizado no QSE da mama esquerda com 6 cm de
+diâmetro.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Efectuou-se biopsia aspirativa glanglio-axilar.
+Fez-se ainda marcação pré-operatória com carbono.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","For example, '11 x 17 mm, 11-1 o'clock' is preferred over '11x17mm 11-1<br>
+</p>
+
+The example above shows the ideal format for a BI-RADS report.  Most screening centers have adopted some format that suits their workflow and individual preferences.  The important concepts outlined above should be included in any BI-RADS report, regardless of the specific formatting.",INbreast_dataset
+Please issue a BI-RADS-structured diagnostic report for the provided mammography images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2008 02.
+
+Os estudos mamográfico e ecográfico documentam nódulo no QSE da mama direita com 20 mm de diâmetro.
+de achados suspeitos de malignidade.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 5 fragmentos, para estudo anatomopatológico.
+Axila sem adenomegalias patológicas.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","birads negative,breast heterogeneously density,No Finding",INbreast_dataset
+What is the diagnosis for this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Data Exame: 2009 01
+
+Ao actual estudo mamográfico, assinalamos relativa escassez de parênquima mamário e padrão
+mamário quase inteiramente adiposo, traduzindo sinais de involução fibrolipomatosa, bilateralmente.
+
+A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.Não se individualizam
+imagens nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras
+alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2","birads suspicious malignant,breast heterogeneously density,Mass",INbreast_dataset
+"Using BI-RADS terminology, describe all detected findings with size (mm), location (clock-face and depth), shape, margin, and density<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01.
+
+No actual estudo, observamos padrão mamográfico de densidades fibroglandulares dispersas,
+pela pequena quantidade de parênquima mamário, havendo regular distribuição dos elementos
+fibroglandulares com certa predominância dos adiposos em ambas as glândulas.
+
+Os estudos mamográfico e ecográfico documentam nódulo no QII da mama esquerda com
+28 mm de diâmetro, de forma redonda com margens indistintas ou imprecisas, associado a
+microcalcificações.
+A ecografia mostra nódulo, de forma lobulada, com profundidade média, a lesão apresenta
+critérios muitos sugestivos de malignidade.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Os fragmentos não foram radiografados.
+Axila positiva. Efectuou-se biopsia aspirativa gânglio-axilar.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","). ""Spiculated"" shape is not a size criterion, and is not a reason to call a lesion ""suspicious"". A spiculated (pointed) lesion may be small and low density; and, a non-spiculated lesion may be flat, and therefore larger and higher density.",INbreast_dataset
+What is the differential diagnosis for these mammographic findings<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01 com antecedentes de mastectomia direita.
+
+O estudo mamográfico efectuado à mama esquerda, não são aparentes imagens de opacidades
+nodulares que sugiram malignidade, agrupamentos de microcalcificações suspeitas, nem
+outros sinais sugestivos de processo neoplásico ou recidiva.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+Which pathology is suggested by this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2008 02.
+
+Os estudos mamográfico e ecográfico documentam nódulo no QSE da mama direita com 20 mm de diâmetro.
+de achados suspeitos de malignidade.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 5 fragmentos, para estudo anatomopatológico.
+Axila sem adenomegalias patológicas.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Based on the current mammograms, generate a comprehensive clinical diagnostic report<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de cirurgia conservadora direita.
+Primeiro exame pós cirurgia.
+
+Observa-se assimetria mamária, com redução do volume da mama direita, a que se associam sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","NOTE: This case is also a great example of fat necrosis, and has been submitted under an additional factoid labelled as such.",INbreast_dataset
+Which pathology is suggested by this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Nódulo com cerca de 4cm de diâmetro, TQS mama direita, região central.
+MB- 4 fragmentos.
+BA a axila ipsilateral - gânglio suspeito.
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Draft a BI-RADS structured mammography report including Indication, Technique (views obtained), Breast Composition, and detailed Findings per breast<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+O estudo imagiológico documenta nódulo localizado no QSE da mama esquerda com 6 cm de
+diâmetro.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Efectuou-se biopsia aspirativa glanglio-axilar.
+Fez-se ainda marcação pré-operatória com carbono.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","Final BI-RADS structured mammography report including an overall assessment category, specific findings, and recommendations for further evaluation if appropriate.",INbreast_dataset
+What is the diagnosis for this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01.
+
+Nódulo no QSE da mama direita, com cerca de 20mm, suspeito.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Axila sem adenomegalias patológicas.
+
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+Please provide your interpretation of this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2009 02.
+
+Estudo mamográfico e ecográfico sem achados de suspeição. Sem formações nodulares sólidas
+ou liquidas suspeitas, nem áreas focais de atenuação do feixe ultrassónico. Observa-se
+opacidade nodular à esquerda, de características, à esquerda, também estudada na ecografia,
+correspondendo a formação cística com cerca de 12mm.
+
+Bi-rads 2","birads negative,breast heterogeneously density,No Finding",INbreast_dataset
+Please issue a BI-RADS-structured diagnostic report for the provided mammography images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01.
+
+Nódulo no QSE da mama direita, com cerca de 20mm, suspeito.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Axila sem adenomegalias patológicas.
+
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+What are the key findings on this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Nódulo com cerca de 4cm de diâmetro, TQS mama direita, região central.
+MB- 4 fragmentos.
+BA a axila ipsilateral - gânglio suspeito.
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c","birads negative,breast heterogeneously density,No Finding",INbreast_dataset
+Please provide a complete diagnostic radiology report for the provided mammographic images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01 com antecedentes de cirurgia conservadora esquerda.
+
+Observa-se assimetria mamária, com redução do volume da mama esquerda, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo,
+em relação com antecedentes cirúrgicos e de RT. Observam-se calcificações grosseiras benignas,
+bilateralmente.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",Distortion and mass like opacity in the upper outer quadrant.,INbreast_dataset
+What is the diagnosis for this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Observamos padrão mamário extremamente denso, por abundante quantidade de parênquima
+mamário, podendo diminuir a sensibilidade deste exame.
+Estes achados traduzem fenómenos de alterações fibrocísticas ou fibroadenose. A pele e o tecido
+celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam opacidades nodulares que sugiram malignidade. Existem microcalcificações,
+cuja morfologia, densidades e distribuição são sugestivas de benignidade e atribuiveis
+a microcalcificações benignas, em quadro de alterações fibro-quisticas.
+
+achados imagiológicos benignos - bi-rads - 2","birads negative,breast extremely density,No Finding",INbreast_dataset
+Which pathology is suggested by this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01 com antecedentes de mastectomia direita.
+Primeiro exame pós cirurgia.
+
+O estudo mamográfico efectuado à mama esquerda, não são aparentes imagens de opacidades nodulares que sugiram malignidade, agrupamentos de microcalcificações suspeitas, nem outros sinais sugestivos de processo neoplásico ou recidiva.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Using BI-RADS terminology, describe all detected findings with size (mm), location (clock-face and depth), shape, margin, and density<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de cirurgia conservadora esquerda.
+
+Observa-se assimetria mamária, com redução do volume da mama esquerda, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo,
+em relação com antecedentes cirúrgicos e de RT. Observam-se calcificações grosseiras benignas,
+bilateralmente.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",All masses were considered suspicious and required additional workup.  All underwent additional mammographic views and ultrasound.,INbreast_dataset
+What are the key findings on this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01 com antecedentes de cirurgia conservadora direita.
+
+Observa-se assimetria mamária, com redução do volume da mama direita, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em
+relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Summarize the mammograms in BI-RADS format, reporting breast density and any masses, calcifications, asymmetries, or architectural distortion<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01.
+
+No actual estudo, observamos grande quantidade de parênquima mamário, com padrão heterogeneamente denso, particularmente nas regiões retro-aureolares e quadrantes supero-externos.
+Estes aspectos podem diminuir a sensibilidade mamográfica e ocultar pequenos nódulos. A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam imagens de opacidades que sugiram malignidade, micro-calcificações suspeitas ou outras alterações significativas, em qualquer dos lados.
+Observam-se escassas microcalcificações benignas dispersas bilateralmente.
+existem gânglios axilares sem características patológicas bilateralmente.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",                                                                                                                                                                                                                                 3. Asymmetry with a suspicious mass identified                                                                                                                                                                                                                                                                                                                                  4. Other abnormalities identified (not just asymmetry),INbreast_dataset
+"Report using BI-RADS. For each finding, include side (R/L), quadrant, clock-face position, distance from nipple (cm), size (mm), shape, margins, density, associated calcifications, and architectural distortion<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+O estudo imagiológico documenta agrupamento de microcalcificações localizado no QSE da mama direita com 2,5 cm de diâmetro.
+Efectuou-se microbiopsia guiada por estereotaxia, onde foram colhidos 7 fragmentos, para estudo anatomo-patológico. Os fragmentos foram radiografados, 3 continham microcalcificações.
+Fez-se ainda marcação pré-operatória com carbono.
+
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c.","1.5 cm oval, well-circumscribed, parallel, smooth, equal density mass with microlobulated margins in the lower inner quadrant of the right breast.",INbreast_dataset
+Please provide your interpretation of this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Nódulo com cerca de 4cm de diâmetro, TQS mama direita, região central.
+MB- 4 fragmentos.
+BA a axila ipsilateral - gânglio suspeito.
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+What is the differential diagnosis for these mammographic findings<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2009 02.
+
+O estudo imagiológico evidencia nódulo localizado no QSE da mama direita, com 2,2 cm de diâmetro
+Efectou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Axila negativa.
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Please write a formal, radiologist-style mammography report for the provided images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+Observamos padrão mamário extremamente denso, por abundante quantidade de parênquima mamário, podendo diminuir a sensibilidade deste exame.
+Estes achados traduzem fenómenos de alterações fibrocísticas ou fibroadenose. A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam opacidades nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras alterações relevantes, em qualquer dos lados.
+Estudo ecográfico consonante com estudo mamográfico, evidenciando achados em favor de alterações fibroquisticas. Observam-se quistos com características sugestivas de benignidade.
+Sem formações nodulares sólidas ou liquidas suspeitas, nem áreas focais de atenuação do feixe ultrassónico.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","There is a large mass in the right breast, which is partially obscured by the surrounding breast tissue. No suspicious calcifications or skin thickening is noted.",INbreast_dataset
+"Please produce a complete diagnostic report for the provided mammograms. The report must include, in this order: 1) Breast density (ACR a-d) with a brief justification; 2) Key imaging findings organized by side (left/right) and view (CC/MLO), covering mass descriptors (shape, margins, density), microcalcifications, architectural distortion, skin/nipple changes, and axillary lymph nodes; 3) Comparison with prior studies (write 'no prior for comparison' if none are available); 4) A single BI-RADS category (0-6) with rationale; 5) Follow-up recommendations aligned with the category: 0 -> additional imaging (e.g., spot compression/magnification/ultrasound/MRI); 3 -> short-interval follow-up in 6 months; 4/5 -> tissue diagnosis recommended with preferred guidance (e.g., ultrasound-guided or stereotactic); 1/2 -> routine screening interval. If no suspicious abnormality is identified, explicitly state 'Negative examination, BI-RADS 1/2 (choose one)' and provide the routine screening interval. Do not fabricate information. For any item that cannot be determined, write 'unable to assess'. Output as concise bullet points, and express all measurements in millimeters<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de cirurgia conservadora direita.
+
+Observa-se assimetria mamária, com redução do volume da mama direita, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em
+relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",,INbreast_dataset
+Which pathology is suggested by this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01.
+
+Nódulo no QSE da mama direita, com cerca de 20mm, suspeito.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Axila sem adenomegalias patológicas.
+
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+Please generate a BI-RADS-compliant structured radiology report based on the provided mammograms<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01 com antecedentes de cirurgia conservadora direita.
+
+Observa-se assimetria mamária, com redução do volume da mama direita, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em
+relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",No Finding,INbreast_dataset
+What are the key findings on this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01 com antecedentes de mastectomia direita.
+
+O estudo mamográfico efectuado à mama esquerda, não são aparentes imagens de opacidades
+nodulares que sugiram malignidade, agrupamentos de microcalcificações suspeitas, nem
+outros sinais sugestivos de processo neoplásico ou recidiva.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Please produce a complete diagnostic report for the provided mammograms. The report must include, in this order: 1) Breast density (ACR a-d) with a brief justification; 2) Key imaging findings organized by side (left/right) and view (CC/MLO), covering mass descriptors (shape, margins, density), microcalcifications, architectural distortion, skin/nipple changes, and axillary lymph nodes; 3) Comparison with prior studies (write 'no prior for comparison' if none are available); 4) A single BI-RADS category (0-6) with rationale; 5) Follow-up recommendations aligned with the category: 0 -> additional imaging (e.g., spot compression/magnification/ultrasound/MRI); 3 -> short-interval follow-up in 6 months; 4/5 -> tissue diagnosis recommended with preferred guidance (e.g., ultrasound-guided or stereotactic); 1/2 -> routine screening interval. If no suspicious abnormality is identified, explicitly state 'Negative examination, BI-RADS 1/2 (choose one)' and provide the routine screening interval. Do not fabricate information. For any item that cannot be determined, write 'unable to assess'. Output as concise bullet points, and express all measurements in millimeters<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de cirurgia conservadora direita.
+
+Observa-se assimetria mamária, com redução do volume da mama direita, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em
+relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",,INbreast_dataset
+What are the key findings on this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01 com antecedentes de mastectomia direita.
+Primeiro exame pós cirurgia.
+
+O estudo mamográfico efectuado à mama esquerda, não são aparentes imagens de opacidades nodulares que sugiram malignidade, agrupamentos de microcalcificações suspeitas, nem outros sinais sugestivos de processo neoplásico ou recidiva.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads suspicious malignant,breast heterogeneously density,Mass",INbreast_dataset
+Please issue a BI-RADS-structured diagnostic report for the provided mammography images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2009 02.
+
+Observamos padrão mamário extremamente denso, por abundante quantidade de parênquima mamário, podendo diminuir a sensibilidade deste exame.
+Estes achados traduzem fenómenos de alterações fibrocísticas ou fibroadenose. A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam opacidades nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras alterações relevantes, em qualquer dos lados.
+Estudo ecográfico consonante com estudo mamográfico, evidenciando achados em favor de alterações fibroquisticas. Observam-se quistos com características sugestivas de benignidade.
+Sem formações nodulares sólidas ou liquidas suspeitas, nem áreas focais de atenuação do feixe ultrassónico.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast extremely density,No Finding",INbreast_dataset
+"Draft a BI-RADS structured mammography report including Indication, Technique (views obtained), Breast Composition, and detailed Findings per breast<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01.
+
+No actual estudo, observamos padrão mamográfico de densidades fibroglandulares dispersas,
+pela pequena quantidade de parênquima mamário, havendo regular distribuição dos elementos
+fibroglandulares com certa predominância dos adiposos em ambas as glândulas.
+
+Os estudos mamográfico e ecográfico documentam nódulo no QII da mama esquerda com
+28 mm de diâmetro, de forma redonda com margens indistintas ou imprecisas, associado a
+microcalcificações.
+A ecografia mostra nódulo, de forma lobulada, com profundidade média, a lesão apresenta
+critérios muitos sugestivos de malignidade.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Os fragmentos não foram radiografados.
+Axila positiva. Efectuou-se biopsia aspirativa gânglio-axilar.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","Include assessment of Architectural Distortion, Assessment Categories and Description of BI-RADS assessment categories.",INbreast_dataset
+Please provide a complete diagnostic radiology report for the provided mammographic images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2009 02.
+
+Observamos padrão mamário extremamente denso, por abundante quantidade de parênquima mamário, podendo diminuir a sensibilidade deste exame.
+Estes achados traduzem fenómenos de alterações fibrocísticas ou fibroadenose. A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam opacidades nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras alterações relevantes, em qualquer dos lados.
+Estudo ecográfico consonante com estudo mamográfico, evidenciando achados em favor de alterações fibroquisticas. Observam-se quistos com características sugestivas de benignidade.
+Sem formações nodulares sólidas ou liquidas suspeitas, nem áreas focais de atenuação do feixe ultrassónico.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast extremely density,No Finding",INbreast_dataset
+"Report using BI-RADS. For each finding, include side (R/L), quadrant, clock-face position, distance from nipple (cm), size (mm), shape, margins, density, associated calcifications, and architectural distortion<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+Observamos padrão mamário extremamente denso, por abundante quantidade de parênquima mamário, podendo diminuir a sensibilidade deste exame.
+Estes achados traduzem fenómenos de alterações fibrocísticas ou fibroadenose. A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam opacidades nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras alterações relevantes, em qualquer dos lados.
+Estudo ecográfico consonante com estudo mamográfico, evidenciando achados em favor de alterações fibroquisticas. Observam-se quistos com características sugestivas de benignidade.
+Sem formações nodulares sólidas ou liquidas suspeitas, nem áreas focais de atenuação do feixe ultrassónico.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","	Mass: 3.5x2.5x2.0 cm, round, smooth, dense mass with lobulated margins and without calcifications in the upper outer quadrant of the right breast at 11:00",INbreast_dataset
+What are the key findings on this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Data Exame: 2009 01
+
+Ao actual estudo mamográfico, assinalamos relativa escassez de parênquima mamário e padrão
+mamário quase inteiramente adiposo, traduzindo sinais de involução fibrolipomatosa, bilateralmente.
+
+A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.Não se individualizam
+imagens nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras
+alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+Can you identify any abnormalities on this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2009 02.
+
+O estudo imagiológico documenta nódulo localizado no QSE da mama esquerda com 6 cm de
+diâmetro.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Efectuou-se biopsia aspirativa glanglio-axilar.
+Fez-se ainda marcação pré-operatória com carbono.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","birads negative,breast heterogeneously density,No Finding",INbreast_dataset
+Please generate a BI-RADS-compliant structured radiology report based on the provided mammograms<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01 com antecedentes de cirurgia conservadora esquerda.
+
+Observa-se assimetria mamária, com redução do volume da mama esquerda, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em
+relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",Mammogram negative,INbreast_dataset
+Please issue a BI-RADS-structured diagnostic report for the provided mammography images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01 com antecedentes de cirurgia conservadora direita.
+Primeiro exame pós cirurgia.
+
+Observa-se assimetria mamária, com redução do volume da mama direita, a que se associam sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",No diagnostic abnormalities.,INbreast_dataset
+"Please produce a complete diagnostic report for the provided mammograms. The report must include, in this order: 1) Breast density (ACR a-d) with a brief justification; 2) Key imaging findings organized by side (left/right) and view (CC/MLO), covering mass descriptors (shape, margins, density), microcalcifications, architectural distortion, skin/nipple changes, and axillary lymph nodes; 3) Comparison with prior studies (write 'no prior for comparison' if none are available); 4) A single BI-RADS category (0-6) with rationale; 5) Follow-up recommendations aligned with the category: 0 -> additional imaging (e.g., spot compression/magnification/ultrasound/MRI); 3 -> short-interval follow-up in 6 months; 4/5 -> tissue diagnosis recommended with preferred guidance (e.g., ultrasound-guided or stereotactic); 1/2 -> routine screening interval. If no suspicious abnormality is identified, explicitly state 'Negative examination, BI-RADS 1/2 (choose one)' and provide the routine screening interval. Do not fabricate information. For any item that cannot be determined, write 'unable to assess'. Output as concise bullet points, and express all measurements in millimeters<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01.
+
+Nódulo no QSE da mama direita, com cerca de 20mm, suspeito.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Axila sem adenomegalias patológicas.
+
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c.",,INbreast_dataset
+"Based on the current mammograms, generate a comprehensive clinical diagnostic report<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","No actual estudo, observamos grande quantidade de parênquima mamário, com padrão heterogeneamente
+denso, particularmente nas regiões retro- aureolares e quadrantes supero-externos.
+Não se individualizam imagens de opacidades que sugiram malignidade, micro-calcificações
+suspeitas ou outras alterações significativas, em qualquer dos lados.
+existem algumas raras microcacificações benignas, nomeadamente á esq.",Not applicable.,INbreast_dataset
+What is the diagnosis for this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01.
+
+No actual estudo, observamos padrão mamográfico de densidades fibroglandulares dispersas,
+pela pequena quantidade de parênquima mamário, havendo regular distribuição dos elementos
+fibroglandulares com certa predominância dos adiposos em ambas as glândulas.
+
+Os estudos mamográfico e ecográfico documentam nódulo no QII da mama esquerda com
+28 mm de diâmetro, de forma redonda com margens indistintas ou imprecisas, associado a
+microcalcificações.
+A ecografia mostra nódulo, de forma lobulada, com profundidade média, a lesão apresenta
+critérios muitos sugestivos de malignidade.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Os fragmentos não foram radiografados.
+Axila positiva. Efectuou-se biopsia aspirativa gânglio-axilar.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","birads negative,breast heterogeneously density,No Finding",INbreast_dataset
+What is the diagnosis for this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2009 02.
+
+O estudo imagiológico evidencia nódulo localizado no QSE da mama direita, com 2,2 cm de diâmetro
+Efectou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Axila negativa.
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Summarize the mammograms in BI-RADS format, reporting breast density and any masses, calcifications, asymmetries, or architectural distortion<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de cirurgia conservadora esquerda.
+
+Observa-se assimetria mamária, com redução do volume da mama esquerda, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em
+relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",: highly suspicious findings.,INbreast_dataset
+What is the diagnosis for this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01.
+O estudo mamográfico documenta agrupamento de microcalcificações localizado na transição dos
+quadrantes superiores da mama esquerda, suspeitas. CDIS?
+Efectuou-se microbiopsia guiada por estereotaxia, onde foram colhidos 4 fragmentos, para estudo
+anatomo-patológico. Os fragmentos foram radiografados, 3 continham microcalcificações.
+
+Alterações com suspeição de malignidade intermédia - Bi-Rads - 4b.","birads negative,breast extremely density,No Finding",INbreast_dataset
+Please provide your interpretation of this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Observamos padrão mamário extremamente denso, por abundante quantidade de parênquima
+mamário, podendo diminuir a sensibilidade deste exame.
+Estes achados traduzem fenómenos de alterações fibrocísticas ou fibroadenose. A pele e o tecido
+celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam opacidades nodulares que sugiram malignidade. Existem microcalcificações,
+cuja morfologia, densidades e distribuição são sugestivas de benignidade e atribuiveis
+a microcalcificações benignas, em quadro de alterações fibro-quisticas.
+
+achados imagiológicos benignos - bi-rads - 2",system and there is gray matter completely lining this defect. This is consistent with open lip schizencephaly.,INbreast_dataset
+Please issue a BI-RADS-structured diagnostic report for the provided mammography images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01.
+
+No actual estudo, observamos grande quantidade de parênquima mamário, com padrão heterogeneamente denso, particularmente nas regiões retro-aureolares e quadrantes supero-externos.
+Estes aspectos podem diminuir a sensibilidade mamográfica e ocultar pequenos nódulos. A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam imagens de opacidades que sugiram malignidade, micro-calcificações suspeitas ou outras alterações significativas, em qualquer dos lados.
+Observam-se escassas microcalcificações benignas dispersas bilateralmente.
+existem gânglios axilares sem características patológicas bilateralmente.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast scattered areas of fibroglandular,No Focal Lesions",INbreast_dataset
+What is the differential diagnosis for these mammographic findings<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01.
+
+No actual estudo, observamos grande quantidade de parênquima mamário, com padrão heterogeneamente denso, particularmente nas regiões retro-aureolares e quadrantes supero-externos.
+Estes aspectos podem diminuir a sensibilidade mamográfica e ocultar pequenos nódulos. A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam imagens de opacidades que sugiram malignidade, micro-calcificações suspeitas ou outras alterações significativas, em qualquer dos lados.
+Observam-se escassas microcalcificações benignas dispersas bilateralmente.
+existem gânglios axilares sem características patológicas bilateralmente.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Summarize the mammograms in BI-RADS format, reporting breast density and any masses, calcifications, asymmetries, or architectural distortion<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Observamos padrão mamário extremamente denso, por abundante quantidade de parênquima
+mamário, podendo diminuir a sensibilidade deste exame.
+Estes achados traduzem fenómenos de alterações fibrocísticas ou fibroadenose. A pele e o tecido
+celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam opacidades nodulares que sugiram malignidade. Existem microcalcificações,
+cuja morfologia, densidades e distribuição são sugestivas de benignidade e atribuiveis
+a microcalcificações benignas, em quadro de alterações fibro-quisticas.
+
+achados imagiológicos benignos - bi-rads - 2","In this patient, breast extremely dense, no masses, no microcalcifications, no axillary lymphadenopathy.",INbreast_dataset
+Please issue a BI-RADS-structured diagnostic report for the provided mammography images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"No actual estudo, observamos grande quantidade de parênquima mamário, com padrão heterogeneamente
+denso, particularmente nas regiões retro- aureolares e quadrantes supero-externos.
+Não se individualizam imagens de opacidades que sugiram malignidade, micro-calcificações
+suspeitas ou outras alterações significativas, em qualquer dos lados.
+existem algumas raras microcacificações benignas, nomeadamente á esq.","birads suspicious malignant,breast heterogeneously density,Mass",INbreast_dataset
+Please issue a BI-RADS-structured diagnostic report for the provided mammography images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Data Exame: 2009 01
+
+Ao actual estudo mamográfico, assinalamos relativa escassez de parênquima mamário e padrão
+mamário quase inteiramente adiposo, traduzindo sinais de involução fibrolipomatosa, bilateralmente.
+
+A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.Não se individualizam
+imagens nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras
+alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2","birads negative,breast scattered areas of fibroglandular,No Focal Lesions",INbreast_dataset
+"Based on the current mammograms, generate a comprehensive clinical diagnostic report<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de cirurgia conservadora esquerda.
+
+Observa-se assimetria mamária, com redução do volume da mama esquerda, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em
+relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",None.,INbreast_dataset
+"Create a BI-RADS-structured report with the sections: Indication, Technique/Views, Breast Density, Findings (by breast and view), Impression, BI-RADS Category, Recommendation<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Observamos padrão mamário extremamente denso, por abundante quantidade de parênquima
+mamário, podendo diminuir a sensibilidade deste exame.
+Estes achados traduzem fenómenos de alterações fibrocísticas ou fibroadenose. A pele e o tecido
+celular subcutâneo apresentam aspectos mamográficos normais.
+Não se individualizam opacidades nodulares que sugiram malignidade. Existem microcalcificações,
+cuja morfologia, densidades e distribuição são sugestivas de benignidade e atribuiveis
+a microcalcificações benignas, em quadro de alterações fibro-quisticas.
+
+achados imagiológicos benignos - bi-rads - 2","BI-RADS CATEGORY STRUCTURE:
+
+0 - Normal
+1 - Minimally Invasive Disease
+2 - Benign Findings
+3 - Probably Benign Findings - Short Interval Followup Suggestive
+4 - Suspicious Abnormality
+5 - Highly Suggestive of Malignancy",INbreast_dataset
+"Draft a BI-RADS structured mammography report including Indication, Technique (views obtained), Breast Composition, and detailed Findings per breast<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Data Exame: 2009 01
+
+Ao actual estudo mamográfico, assinalamos relativa escassez de parênquima mamário e padrão
+mamário quase inteiramente adiposo, traduzindo sinais de involução fibrolipomatosa, bilateralmente.
+
+A pele e o tecido celular subcutâneo apresentam aspectos mamográficos normais.Não se individualizam
+imagens nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras
+alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2","Discuss with patient and/or legal guardian any plans for further workup, including biopsy, if needed.",INbreast_dataset
+Please summarize your conclusions from this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2009 02.
+
+Estudo mamográfico e ecográfico sem achados de suspeição. Sem formações nodulares sólidas
+ou liquidas suspeitas, nem áreas focais de atenuação do feixe ultrassónico. Observa-se
+opacidade nodular à esquerda, de características, à esquerda, também estudada na ecografia,
+correspondendo a formação cística com cerca de 12mm.
+
+Bi-rads 2",Screening Mammogram of L breast,INbreast_dataset
+"Using BI-RADS terminology, describe all detected findings with size (mm), location (clock-face and depth), shape, margin, and density<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de cirurgia conservadora direita.
+Primeiro exame pós cirurgia.
+
+Observa-se assimetria mamária, com redução do volume da mama direita, a que se associam sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",BI-RADS classification for this image is 4C.,INbreast_dataset
+Please summarize your conclusions from this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01 com antecedentes de cirurgia conservadora esquerda.
+
+Observa-se assimetria mamária, com redução do volume da mama esquerda, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo,
+em relação com antecedentes cirúrgicos e de RT. Observam-se calcificações grosseiras benignas,
+bilateralmente.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+"Create a BI-RADS-structured report with the sections: Indication, Technique/Views, Breast Density, Findings (by breast and view), Impression, BI-RADS Category, Recommendation<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de cirurgia conservadora esquerda.
+
+Observa-se assimetria mamária, com redução do volume da mama esquerda, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo,
+em relação com antecedentes cirúrgicos e de RT. Observam-se calcificações grosseiras benignas,
+bilateralmente.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",BI-RADS Categories: 0 - Need Additional Imaging Evaluation or Not Applicable (unless No Finding is the final result)  1 - Negative  2 - Benign Findings  3 - Probably Benign  4 - Suspicious Findings  5 - Highly Suspicious Findings,INbreast_dataset
+Please generate a BI-RADS-compliant structured radiology report based on the provided mammograms<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Opacidade nodular de contornos regulares, densidade homogenea, sem micros, de catacteristicas
+benignas Qii da mama drt.
+Estudo ecográfico evidencia achados semelhantes ao mamografico correspondendo anodulo solido,sugestivo de fibroadenoma (birads-2)
+Considererando ser nodulo de \conhecimento\recente e o facto de irmã com Ca da mama
+efectuou-se Biopsia aspirativa","birads negative,breast extremely density,No Finding",INbreast_dataset
+"Summarize the mammograms in BI-RADS format, reporting breast density and any masses, calcifications, asymmetries, or architectural distortion<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","No actual estudo, observamos grande quantidade de parênquima mamário, com padrão heterogeneamente
+denso, particularmente nas regiões retro- aureolares e quadrantes supero-externos.
+Não se individualizam imagens de opacidades que sugiram malignidade, micro-calcificações
+suspeitas ou outras alterações significativas, em qualquer dos lados.
+existem algumas raras microcacificações benignas, nomeadamente á esq.",from 2011-2012 were reported as per BI-RADS 2012,INbreast_dataset
+"Create a BI-RADS-structured report with the sections: Indication, Technique/Views, Breast Density, Findings (by breast and view), Impression, BI-RADS Category, Recommendation<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+O estudo imagiológico evidencia nódulo localizado no QSE da mama direita, com 2,2 cm de diâmetro
+Efectou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Axila negativa.
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.",The findings portion of the report should include the following:,INbreast_dataset
+"Create a BI-RADS-structured report with the sections: Indication, Technique/Views, Breast Density, Findings (by breast and view), Impression, BI-RADS Category, Recommendation<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+O estudo imagiológico evidencia nódulo localizado no QSE da mama direita, com 2,2 cm de diâmetro
+Efectou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Axila negativa.
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","BI-RADS Categories of findings are:
+- 1 - Negative
+- 2 - Benign findings
+- 3 - Probably benign findings
+- 4 - Suspicious findings
+- 5 - Highly suspicious findings",INbreast_dataset
+Please provide a complete diagnostic radiology report for the provided mammographic images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01 com antecedentes de cirurgia conservadora esquerda.
+
+Observa-se assimetria mamária, com redução do volume da mama esquerda, a que se associam
+sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em
+relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas
+ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.",cm from the nipple.  This is consistent with a new finding compared with prior screening mammograms from ___.  No suspicious cluster of calcifications is identified.  There is no evidence of surrounding fibroadenopathy.  Visualized lymph nodes are normal appearing.,INbreast_dataset
+Please provide a complete diagnostic radiology report for the provided mammographic images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2008 02.
+
+Os estudos mamográfico e ecográfico documentam nódulo no QSE da mama direita com 20 mm de diâmetro.
+de achados suspeitos de malignidade.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 5 fragmentos, para estudo anatomopatológico.
+Axila sem adenomegalias patológicas.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.",There is a large mass in the upper outer quadrant of the right breast.,INbreast_dataset
+Please summarize your conclusions from this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Opacidade nodular de contornos regulares, densidade homogenea, sem micros, de catacteristicas
+benignas Qii da mama drt.
+Estudo ecográfico evidencia achados semelhantes ao mamografico correspondendo anodulo solido,sugestivo de fibroadenoma (birads-2)
+Considererando ser nodulo de \conhecimento\recente e o facto de irmã com Ca da mama
+efectuou-se Biopsia aspirativa",Screening Mammogram of L breast,INbreast_dataset
+"Please write a formal, radiologist-style mammography report for the provided images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2009 02.
+
+O estudo imagiológico documenta agrupamento de microcalcificações localizado no QSE da mama direita com 2,5 cm de diâmetro.
+Efectuou-se microbiopsia guiada por estereotaxia, onde foram colhidos 7 fragmentos, para estudo anatomo-patológico. Os fragmentos foram radiografados, 3 continham microcalcificações.
+Fez-se ainda marcação pré-operatória com carbono.
+
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c.",Architectural distortion in the right upper outer breast with associated calcifications,INbreast_dataset
+What is the diagnosis for this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01 com antecedentes de cirurgia conservadora direita.
+Primeiro exame pós cirurgia.
+
+Observa-se assimetria mamária, com redução do volume da mama direita, a que se associam sinais de densificação e desorganização arquitectural do estroma e espessamento cutâneo, em relação com antecedentes cirúrgicos e de RT.
+Não se individualizam imagens nodulares que sugiram malignidade, micro-calcificações suspeitas ou outras alterações significativas, em qualquer dos lados.
+
+Achados imagiológicos benignos - Bi-Rads - 2.","birads negative,breast scattered areas of fibroglandular,No Finding",INbreast_dataset
+What is the diagnosis for this mammogram<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>?,"Doente observada a 2010 01.
+
+No actual estudo, observamos padrão mamográfico de densidades fibroglandulares dispersas,
+pela pequena quantidade de parênquima mamário, havendo regular distribuição dos elementos
+fibroglandulares com certa predominância dos adiposos em ambas as glândulas.
+
+Os estudos mamográfico e ecográfico documentam nódulo no QII da mama esquerda com
+28 mm de diâmetro, de forma redonda com margens indistintas ou imprecisas, associado a
+microcalcificações.
+A ecografia mostra nódulo, de forma lobulada, com profundidade média, a lesão apresenta
+critérios muitos sugestivos de malignidade.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Os fragmentos não foram radiografados.
+Axila positiva. Efectuou-se biopsia aspirativa gânglio-axilar.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.","birads negative,breast heterogeneously density,No Finding",INbreast_dataset
+"Report using BI-RADS. For each finding, include side (R/L), quadrant, clock-face position, distance from nipple (cm), size (mm), shape, margins, density, associated calcifications, and architectural distortion<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Nódulo com cerca de 4cm de diâmetro, TQS mama direita, região central.
+MB- 4 fragmentos.
+BA a axila ipsilateral - gânglio suspeito.
+Alterações com suspeição elevada de malignidade - Bi-Rads - 4c","Architectural distortion: Not present, present, or suspicious <br>Architectural distortion can be angular, linear, segmental, or diffuse.  Angular architectural distortion is the most specific, but also the least sensitive.  It is usually a BI-RADS 4 finding.  In this case, there is suspicious architectural distorture.  In general, if there is no mass, then it is a BI-RADS 2",INbreast_dataset
+Please provide a complete diagnostic radiology report for the provided mammographic images<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2009 02.
+
+O estudo imagiológico documenta nódulo localizado no QSE da mama esquerda com 6 cm de
+diâmetro.
+Efectuou-se microbiopsia ecoguiada onde foram colhidos 4 fragmentos, para estudo anatomopatológico.
+Efectuou-se biopsia aspirativa glanglio-axilar.
+Fez-se ainda marcação pré-operatória com carbono.
+
+Achados imagiológicos muito sugestivos de malignidade - Bi-Rads - 5.",There is a large mass on the left.,INbreast_dataset
+"Create a BI-RADS-structured report with the sections: Indication, Technique/Views, Breast Density, Findings (by breast and view), Impression, BI-RADS Category, Recommendation<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.","Doente observada a 2010 01 com antecedentes de mastectomia direita, mamoplastia de redu¸cao e reconstru¸cao.
+O estudo mamogr´afico efectuado `a mama esquerda, nao sao aparentes imagens de opacidades nodulares que sugiram malignidade, agrupamentos de microcalcifica¸coes suspeitas, nem outros sinais sugestivos de processo neopl´asico ou recidiva.
+Achados imagiol´ogicos benignos - Bi-Rads - 2.",See example below.,INbreast_dataset
+Please generate a BI-RADS-compliant structured radiology report based on the provided mammograms<image><image0><image1><image2><image3><image4><image5><image6><image7><image8><image9><image10><image11><image12><image13><image14><image15><image16><image17><image18><image19><image20><image21><image22><image23><image24><image25><image26><image27><image28><image29><image30><image31></image>.,"Doente observada a 2010 01 com antecedentes de mastectomia direita, mamoplastia de redu¸cao e reconstru¸cao.
+O estudo mamogr´afico efectuado `a mama esquerda, nao sao aparentes imagens de opacidades nodulares que sugiram malignidade, agrupamentos de microcalcifica¸coes suspeitas, nem outros sinais sugestivos de processo neopl´asico ou recidiva.
+Achados imagiol´ogicos benignos - Bi-Rads - 2.","birads negative,breast extremely density,No Finding",INbreast_dataset
