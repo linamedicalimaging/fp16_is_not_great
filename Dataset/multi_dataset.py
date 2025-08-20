@@ -13,7 +13,6 @@ from PIL import Image
 import math
 import torchvision
 from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer
-from .dataset import *
 import spacy
 from spacy.tokens import Span
 from scispacy.abbreviation import AbbreviationDetector
