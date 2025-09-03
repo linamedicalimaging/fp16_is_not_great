@@ -6,9 +6,8 @@
 
 import os
 from tqdm import tqdm
-GPU_REQUIRED = [0,1,2,3]
+GPU_REQUIRED = [0,1,2,3,4,5]
 os.environ["CUDA_VISIBLE_DEVICES"] = str(GPU_REQUIRED)[1:-1]
-import re
 import math
 import torch
 import torch.nn as nn
@@ -94,62 +93,6 @@ class DataCollator(object):
         )
 
 
-# In[4]:
-
-
-# ===================== LoRA module =====================
-class LoRALayer(nn.Module):
-    """Wrap an nn.Linear with LoRA (low-rank A@B delta). Train A/B only; freeze the original Linear."""
-    def __init__(self, original_layer: nn.Linear, rank=8, alpha=16, dropout=0.05):
-        super().__init__()
-        assert isinstance(original_layer, nn.Linear), "LoRALayer only supports nn.Linear."
-        self.original_layer = original_layer
-        self.rank = rank
-        self.alpha = alpha
-        self.scaling = alpha / rank
-
-        # Freeze original Linear
-        for p in self.original_layer.parameters():
-            p.requires_grad = False
-
-        in_features  = original_layer.in_features
-        out_features = original_layer.out_features
-        device = original_layer.weight.device
-        dtype  = original_layer.weight.dtype
-
-        # LoRA A/B
-        self.lora_a = nn.Linear(in_features, rank, bias=False, device=device, dtype=dtype)
-        self.lora_b = nn.Linear(rank, out_features, bias=False, device=device, dtype=dtype)
-        self.dropout = nn.Dropout(dropout)
-
-        # Init: B=0 so the initial output is unchanged
-        nn.init.kaiming_uniform_(self.lora_a.weight, a=math.sqrt(5))
-        nn.init.zeros_(self.lora_b.weight)
-
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return self.original_layer(x) + self.scaling * self.lora_b(self.lora_a(self.dropout(x)))
-
-    @torch.no_grad()
-    def merge(self):
-        delta = (self.scaling * self.lora_b.weight) @ self.lora_a.weight
-        self.original_layer.weight += delta
-
-    @torch.no_grad()
-    def unmerge(self):
-        delta = (self.scaling * self.lora_b.weight) @ self.lora_a.weight
-        self.original_layer.weight -= delta
-
-# Only match language-side q/k/v/o of LLaMA (e.g., lang_model.model.layers.3.self_attn.q_proj)
-_QKVO_RE = re.compile(
-    r"^lang_model\.model\.layers\.(\d+)\.self_attn\.(q_proj|k_proj|v_proj|o_proj)$")
-
-# _QKVO_RE = re.compile(
-#     r"^lang_model\.model\.layers\.(\d[19-39])\.self_attn\.(q_proj|k_proj|v_proj|o_proj)$")
-
-
-# In[5]:
-
-
 def _get_parent_and_attr(model: nn.Module, module_name: str):
     parts = module_name.split(".")
     parent = model
@@ -159,29 +102,6 @@ def _get_parent_and_attr(model: nn.Module, module_name: str):
         else:
             parent = getattr(parent, p)
     return parent, parts[-1]
-
-def apply_lora_to_model(model: nn.Module, rank=8, alpha=16, dropout=0.05, verbose=True):
-    to_replace = []
-    for name, module in model.named_modules():
-        if isinstance(module, nn.Linear) and _QKVO_RE.match(name):
-            to_replace.append((name, module))
-    for name, module in to_replace:
-        parent, attr = _get_parent_and_attr(model, name)
-        lora = LoRALayer(module, rank=rank, alpha=alpha, dropout=dropout)
-        with torch.no_grad():
-            lora.original_layer.weight.copy_(module.weight.data)
-        setattr(parent, attr, lora)
-        if verbose:
-            print(f"[LoRA] injected -> {name} ({module.in_features}->{module.out_features})")
-    print(f"[LoRA] total injected: {len(to_replace)}")
-    return model
-
-def freeze_non_lora(model: nn.Module):
-    for n, p in model.named_parameters():
-        if (".lora_a.weight" in n) or (".lora_b.weight" in n):
-            p.requires_grad = True
-        else:
-            p.requires_grad = False
 
 def extract_lora_state_dict(model: nn.Module):
     sd = model.state_dict()
@@ -223,7 +143,7 @@ def create_device_map(model, gpu_count: int):
 
 
 with init_empty_weights():
-    model = MultiLLaMAForCausalLM(lang_model_path=BASE_DIR_LLAMA)
+    model = MultiLLaMAForCausalLM(BASE_DIR_LLAMA)
 device_map = create_device_map(model, len(GPU_REQUIRED))
 model = load_checkpoint_and_dispatch(
     model,
@@ -231,8 +151,7 @@ model = load_checkpoint_and_dispatch(
     device_map=device_map,
     no_split_module_classes=["LlamaDecoderLayer"],
     offload_folder=None,)
-model = apply_lora_to_model(model, rank=LORA_RANK, alpha=LORA_ALPHA, dropout=LORA_DROPOUT)
-freeze_non_lora(model)
+model.add_freeze_non_lora(LORA_RANK, LORA_ALPHA, LORA_DROPOUT)
 
 total_params = sum([p.numel() for p in model.parameters()])
 trainable_params = sum([p.numel() for p in model.parameters() if p.requires_grad])
@@ -271,10 +190,6 @@ model, optimizer, train_loader, lr_scheduler = accelerator.prepare(
     model, optimizer, train_loader, lr_scheduler
 )
 
-
-# In[13]:
-
-
 model.train()
 step = 0
 for epoch in range(NUM_EPOCHS):
@@ -285,21 +200,19 @@ for epoch in range(NUM_EPOCHS):
         if "loss_reweight"  in batch:  kwargs["loss_reweight"]   = batch["loss_reweight"]
         if "key_words_query" in batch: kwargs["key_words_query"] = batch["key_words_query"]
 
-        outputs = model(
+        loss = model(
             vision_x=batch.get("vision_x", None).to(GPU_REQUIRED[0]),
             lang_x=batch.get("lang_x", None).to(GPU_REQUIRED[0]),
             labels=batch.get("labels", None).to(GPU_REQUIRED[0]),
             **kwargs
         )
-        loss = outputs['loss']
-        loss.requires_grad = True
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
         lr_scheduler.step()
         step += 1
         if step % 100 == 0:
-            print(f"Epoch {epoch} | Step {step} | Loss {outputs['loss'].item():.4f}")
+            print(f"Epoch {epoch} | Step {step} | Loss {loss.item():.4f}")
         if step % 30 == 0:
             writer.add_scalar('Loss/train', loss, step)
 
